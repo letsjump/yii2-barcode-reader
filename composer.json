@@ -1,0 +1,23 @@
+{
+    "name": "letsjump/yii2-barcodyii",
+
+    "type": "yii2-extension",
+
+    "description": "A barcode reader / parser for Yii2",
+    "keywords": ["yii2", "barcode", "code", "reader"],
+    "license": "BSD-3-Clause",
+    "support": {
+    },
+    "authors": [
+        {
+            "name": "Gianpaolo Scrigna",
+            "email": "letsjump@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "letsjump\\yii\\barcodyii\\": ""
+        }
+    }
+}
