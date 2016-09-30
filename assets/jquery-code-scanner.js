@@ -9,13 +9,10 @@
 
             $(window).keypress(function (e) {
                 var keycode = (e.which) ? e.which : e.keyCode;
-                if ((keycode >= 65 && keycode <= 90) ||
-                    (keycode >= 97 && keycode <= 122) ||
-                    (keycode >= 48 && keycode <= 57)
-                ) {
-                    chars.push(String.fromCharCode(e.which));
-                }
-                // console.log(e.which + ":" + chars.join("|"));
+				if (/[a-zA-Z0-9-_]/.test(keycode)) {
+					chars.push(String.fromCharCode(e.which));
+				}
+                //console.log(e.which + ":" + chars.join("|"));
                 if (pressed == false) {
                     setTimeout(function () {
                         if (chars.length >= settings.minEntryChars) {

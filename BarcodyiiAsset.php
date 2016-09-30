@@ -18,16 +18,13 @@ use yii\web\AssetBundle;
  */
 class BarcodyiiAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/letsjump/barcodyii';
+    public $sourcePath = '@letsjump/barcodyii';
     
-    public $autoGenerate = true;
+    //public $autoGenerate = true;
     /**
      * @inheritdoc
      */
     public $js = [
-        'jquery.cookie.js',
-    ];
-    public $depends = [
         'assets/jquery-code-scanner.js',
     ];
     /**
