@@ -94,6 +94,7 @@ js;
             $this->action,
             'get'
         );
+        
         $html .= Html::textInput('code', null, $this->inputOptions);
         $html .= Html::endForm();
         
